@@ -13,6 +13,11 @@ class Delivery : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_delivery)
 
+        val pickupButton = findViewById<Button>(R.id.pickup)
+        pickupButton.setOnClickListener {
+            val fragment = PopupWindow.newInstance("param1", "param2")
+            fragment.show(supportFragmentManager, fragment.tag)
+        }
 
     }
 }
