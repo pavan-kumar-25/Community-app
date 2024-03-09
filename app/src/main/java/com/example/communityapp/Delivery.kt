@@ -13,9 +13,6 @@ class Delivery : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_delivery)
 
-        findViewById<Button>(R.id.pickup).setOnClickListener {
-            val bottomSheetFragment = Fragment()
-            bottomSheetFragment.show(supportFragmentManager, "BottomSheetFragment")
-        }
+
     }
 }
